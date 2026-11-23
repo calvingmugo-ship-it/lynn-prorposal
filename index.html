@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#190b17">
+<meta name="description" content="A little question, from Calvin to Lynn.">
+<title>For Lynn ❤️</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:22px;background:radial-gradient(ellipse at 50% 0%,#64213f 0,#2a1025 42%,#100a16 100%);font-family:Georgia,'Times New Roman',serif;color:#fff5f7;overflow-x:hidden}.card{width:min(100%,470px);text-align:center;padding:clamp(28px,8vw,46px) 24px;border:1px solid #ffffff26;border-radius:30px;background:linear-gradient(145deg,#ffffff13,#ffffff08);box-shadow:0 25px 90px #0008;backdrop-filter:blur(14px);position:relative}.top-heart{font-size:42px;filter:drop-shadow(0 5px 15px #ff5d91aa);animation:pulse 1.6s infinite}.eyebrow{font:11px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#ffb6cc;margin:14px 0 18px}h1{font-size:clamp(34px,9vw,48px);line-height:1.08;font-weight:normal;margin:0 0 18px}h1 span{color:#ff91b5;font-style:italic}.intro{font:15px/1.7 Arial,sans-serif;color:#f3dce5;margin:0 auto 28px;max-width:330px}.buttons{display:grid;gap:12px}.choice{width:100%;border:0;border-radius:999px;padding:17px 20px;font-size:16px;font-weight:bold;cursor:pointer;transition:transform .2s,filter .2s}.choice:active{transform:scale(.97)}.yes{background:linear-gradient(100deg,#ff8caf,#ff477f);color:#3b1024;box-shadow:0 9px 28px #ff477f45}.yes2{background:#ffffff12;border:1px solid #ffffff40;color:#fff5f7}.tiny{font:12px Arial,sans-serif;color:#d9b9c7;margin:24px 0 0}.result{display:none;animation:rise .7s ease both}.result h2{font-size:35px;font-weight:normal;color:#ff9cba;margin:10px 0}.result p{font:15px/1.8 Arial,sans-serif;color:#f5dce6}.signature{font-style:italic;color:#ffb1c8!important;font-size:19px!important;margin-top:22px!important}.spark{position:fixed;pointer-events:none;animation:float 3.5s ease-out forwards;z-index:5}@keyframes pulse{50%{transform:scale(1.15)}}@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}@keyframes float{0%{opacity:0;transform:translateY(15px) scale(.6)}15%{opacity:1}100%{opacity:0;transform:translateY(-85vh) rotate(35deg) scale(1.4)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="card">
+ <div class="top-heart" aria-hidden="true">♥</div>
+ <div class="eyebrow">A little question for you</div>
+ <section id="question">
+  <h1>Lynn,<br><span>will you be my girlfriend?</span></h1>
+  <p class="intro">I may not have the perfect words, but I know I’d love the chance to make you smile, support you, and create beautiful memories together. ❤️</p>
+  <div class="buttons">
+   <button class="choice yes" type="button" onclick="sayYes()">YES ❤️</button>
+   <button class="choice yes2" type="button" onclick="sayYes()">YES, OF COURSE! 🥹</button>
+  </div>
+  <p class="tiny">P.S. I made both answers YES because I’m hopeful. 😊</p>
+ </section>
+ <section class="result" id="result" aria-live="polite">
+  <div style="font-size:48px">🥹💗</div>
+  <h2>You just made me so happy!</h2>
+  <p>Lynn, thank you for saying yes. Here’s to laughter, honesty, little adventures, and choosing each other every day. I can’t wait to see what we build together. ❤️</p>
+  <p class="signature">With love, Calvin</p>
+ </section>
+</main>
+<script>
+function sayYes(){document.getElementById('question').style.display='none';document.getElementById('result').style.display='block';for(let i=0;i<34;i++){const s=document.createElement('span');s.className='spark';s.textContent=['♥','💗','✨','💕'][Math.floor(Math.random()*4)];s.style.left=Math.random()*100+'vw';s.style.bottom='-20px';s.style.fontSize=(16+Math.random()*20)+'px';s.style.animationDelay=(Math.random()*.9)+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),4500)}}
+</script>
+</body></html>
